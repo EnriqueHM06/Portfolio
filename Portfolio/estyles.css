@@ -1,0 +1,242 @@
+body {
+
+  /* permitir que el footer se quede abajo sin provocar overflow */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  text-align: center;
+  
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+    background-image: url("Imagenes/Fondo.gif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  color: #ffffff !important;
+}
+
+.logo {
+  display: block;
+  margin: 15px auto 0 auto;
+  height: 60px;
+  width: auto;
+}
+
+.Proyecto {
+  margin-top: 15px;
+}
+
+table {
+   width: 75%;
+  border: 1px solid #ffffff;
+  margin: 15px auto;
+}
+th, td {
+   width: 25%;
+   text-align: center;
+   vertical-align: center;
+   border: 1px solid #ffffff;
+}
+
+/* Estilos para Tabla Bootstrap */
+.tabla-contenedor {
+  width: 90%;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.tabla {
+  margin-bottom: 0;
+}
+
+.table-dark {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: rgba(33, 37, 41, 0.5);
+}
+
+.table-hover > tbody > tr:hover {
+  background-color: rgba(0, 123, 255, 0.2);
+}
+
+.table th, .table td {
+  border-color: #0d6efd;
+  color: #ffffff;
+  padding: 12px;
+}
+
+footer {
+  margin-top: auto;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+  padding: 1rem 1rem;
+}
+
+/* Estilos para Audio */
+.audio {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  margin: 15px auto;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  border: 2px solid #007bff;
+}
+
+.audio-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.audio-status {
+  font-size: 14px;
+  color: #ffffff !important;
+}
+
+#audioStatus {
+  font-weight: bold;
+  color: #ffffff !important;
+}
+
+/* Estilos para Video */
+.video {
+  margin: 30px auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+}
+
+.video h4 {
+  margin-bottom: 15px;
+  color: #ffffff !important;
+}
+
+.video-intro {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #28a745;
+}
+
+/* Estilos para Collapse Multimedia */
+.multimedia-collapse {
+  margin: 20px auto;
+  width: 90%;
+  max-width: 600px;
+}
+
+.multimedia-collapse .btn {
+  width: 100%;
+  text-align: left;
+}
+
+.multimedia-collapse .card {
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid #007bff;
+  color: #ffffff !important;
+}
+
+.multimedia-collapse .card-body p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #ffffff !important;
+}
+
+.formulario {
+  margin: 20px auto;
+  color: black !important;
+  width: 90%;
+  max-width: 600px;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  border: 2px solid #ffc107;
+}
+
+.formulario textarea {
+    color: #000 !important;
+}
+
+.subir {
+  color: black !important;
+}
+
+/* Responsivo */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 12px;
+  }
+
+  .video-player {
+    height: 200px;
+  }
+
+  .audio-section {
+    width: 95%;
+  }
+
+  .video-section {
+    width: 95%;
+  }
+
+  .multimedia-collapse {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    font-size: 14px;
+  }
+
+  .video-player {
+    max-width: 100%;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+
+  .audio-controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .video-section {
+    padding: 15px;
+  }
+}
+

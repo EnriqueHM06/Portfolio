@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="estyles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="audio">
+        <audio controls autoplay loop preload="auto">
+            <source src="Multimedia/hal3.mp3" type="audio/mpeg">
+            <source src="Multimedia/hal3.ogg" type="audio/ogg">
+        </audio>
+    </div>
+
+    <h1>Enrique Moscoso de la Haza</h1>
+    <img class="logo" src="Imagenes/Logo.png" alt="Logo">
+    <h3>Sobre mi</h3>
+    <p>Mi nombre es Enrique Moscoso de la Haza, tengo de estudios Bachillerato de ciencias sociales y grado superior de desarrollo de aplicaciones web. Tengo de experiencia laboral prácticas profesionales</p>
+
+    <div class="video">
+        <h4>Video presentación</h4>
+        <video id="portfolioVideo" controls width="400" height="300" class="video-intro" data-bs-toggle="tooltip" data-bs-placement="top" title="Videopresentación sobre mí">
+            <source src="Multimedia/Video Curriculum.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+    </div>
+    <h3 class="Proyecto">Proyectos</h3>
+    <div class="tabla-contenedor">
+        <table class="tabla table-striped table-hover table-dark">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Enlace Externo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Página Web de Minecraft</td>
+                    <td>Una página que proporciona información sobre los distintos aspectos del juego</td>
+                    <td><a href="https://github.com/emh0009-create/Pagina-Web" target="_blank" class="btn btn-sm btn-info">Pincha aquí</a></td>
+                </tr>
+                <tr>
+                    <td>Proyecto final de Primero de Daw</td>
+                    <td>Un proyecto final realizado en parejas, que consiste en un programa creado en Java donde incluyes información personal de un alumno y le agregas las notas y por último lo conectas con una base de datos.</td>
+                    <td><a href="https://github.com/nenosfc/TrabajoGrupal" target="_blank" class="btn btn-sm btn-info">Pincha aquí</a></td>
+                </tr>
+                <tr>
+                    <td>Portfolio</td>
+                    <td>Un portfolio con información sobre mí, hecho con html5 y con bootstrap</td>
+                    <td>Estás aquí ahora mismo</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <h2 class="Formulario">Formulario de Contacto</h2>
+
+<form class="formulario" action="#" method="post" novalidate>
+    <p>
+        <label for="name">Nombre</label>
+    </p>
+    <p>
+        <input type="text" placeholder="Tu nombre" required>
+    </p>
+    <p>
+        <label for="email">Email</label>
+    </p>
+    <p>
+        <input type="email" placeholder="introduce tu email">
+    </p>
+    <p>
+        <label for="message">Mensaje</label>
+    </p>
+    <p>
+        <textarea placeholder="Escribe tu mensaje aquí."></textarea>
+    </p>
+    <p>
+        <div class="checkbox">
+    </p>
+
+<input type="checkbox" required>
+<label for="terms">Acepto las condiciones y la política de privacidad.</label>
+</div>
+
+<div id="form-message" role="status" aria-live="polite" class="form-message" hidden></div>
+
+<button type="submit" class="subir">Enviar</button>
+</form>
+
+    <h2 class="Formulario">Recursos usados</h2>
+    
+    <div class="multimedia-collapse">
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multimediaInfo" aria-expanded="false" aria-controls="multimediaInfo">
+            ver recursos multimedia usados
+        </button>
+        <div class="collapse" id="multimediaInfo">
+            <div class="card card-body mt-3">
+                <h5>Recursos Multimedia</h5>
+                <p><strong>Audio de Fondo:</strong> hal3.mp3 y hal3.ogg.</p>
+                <p><strong>Video de Proyectos:</strong> Vídeo sobre mí.</p>
+                <p><strong>Código empleado:</strong> HTML5 y Bootstrap.</p>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer>
+        <p>© 2025 Enrique. Todos los derechos reservados.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
